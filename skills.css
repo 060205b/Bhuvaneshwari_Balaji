@@ -1,0 +1,113 @@
+/* General Body Styling */
+body {
+    font-family: Helvetica;
+    background-color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Skills Container Styling */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for the grid */
+    gap: 3.5em; /* Increase space between containers */
+    max-width: 1200px;
+    margin: 2em auto; /* Center the container */
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background-color: rgba(93, 92, 92, 0.8);
+    padding: 1em;
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center the children horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    height: 200px; /* Set fixed height */
+    width: 100%; /* Full width of the grid cell */
+    
+}
+
+/* Hover Effect for Skill Cards */
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+/* Skill Logo Styling */
+/* Assuming this is the parent container for the logos */
+/* Parent container for the logos */
+.skills-list {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow logos to wrap onto the next line */
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Center logos vertically if needed */
+    gap: 0.5em; /* Optional: Add space between logos */
+}
+
+/* Logo Styling */
+.skill-logo {
+    width: 45px; /* Set a fixed width */
+    height: 45px; /* Set a fixed height */
+    object-fit: fill; /* Maintain aspect ratio */
+    margin: 0.2em; /* Space around the logo */
+}
+
+/* Heading Styling within Skill Cards */
+.skill-card h2 {
+    color: #7dabdc; /* Change color as needed */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the heading text */
+    border-bottom: 2px solid #7dabdc; /* Add a border below the heading */
+}
+
+/* Grid Positioning for Skill Cards */
+.skill-card:nth-child(1) {
+    grid-column: 1; /* Place in 1st column */
+}
+
+.skill-card:nth-child(2) {
+    grid-column: 2; /* Place in 2nd column */
+}
+
+.skill-card:nth-child(3) {
+    grid-column: 3; /* Place in 3rd column */
+}
+
+.skill-card:nth-child(4) {
+    grid-column: 4; /* Place in 4th column */
+}
+
+/* Row 2 Items */
+.skill-card:nth-child(5) {
+    grid-column: 2; /* Place below the 2nd container */
+    grid-row: 2; /* This will be in the second row */
+}
+
+.skill-card:nth-child(6) {
+    grid-column: 3; /* Place below the 3rd container */
+    grid-row: 2; /* This will be in the second row */
+}
+
+.ml-list {
+    color: #f3f3f3; /* Change this to your desired color */
+    font-weight: bold; /* Make text bold */
+}
+
+.ml-list li {
+    margin: 0.5px 0; /* Add some spacing between list items */
+}

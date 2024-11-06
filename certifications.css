@@ -1,0 +1,89 @@
+/* General Body Styling */
+body {
+    font-family: Helvetica;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+header {
+    color: #f3f2f2;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+/* Certifications Container */
+.certifications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* Certification Card Styling */
+.certification-card {
+    background-color: rgba(93, 92, 92, 0.8); /* Set background color with transparency */
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certification-card h2 {
+    color: #3283ca;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+
+/* Certificate Images Styling */
+.cert-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.certification-image {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certification-image:hover {
+    transform: scale(1.05);
+}
+
+/* Zoom Modal Styling */
+#zoom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoom-content {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
